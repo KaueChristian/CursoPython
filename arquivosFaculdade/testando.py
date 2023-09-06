@@ -1,6 +1,6 @@
 import CalculoOtimizado
 
-string = "Ssss"
-bases = CalculoOtimizado.convert(string)
-print(bases)
+mensagem = "ssss"
 
+Mensagem_Criptografada = CalculoOtimizado.convert(mensagem)
+print('\n\n\n\n', Mensagem_Criptografada)

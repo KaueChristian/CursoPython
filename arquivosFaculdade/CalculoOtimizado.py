@@ -1,5 +1,5 @@
-import random
 import sympy as sp
+import secrets
 
 # Converte uma string em uma lista de bases de números com ponto flutuante.
 def convert(corda):
@@ -8,9 +8,9 @@ def convert(corda):
     bases = [sp.sqrt((b + 3**0.5)**2) for b in num]
     return bases
 
-# Gera uma chave aleatória.
-def gerar_chave():
-    return random.random()
+def chave():
+    init_key = secrets.token_bytes(16)
+    return init_key
 
 # Valida uma string, verificando se ela contém apenas caracteres alfanuméricos.
 def validar_string(string):
